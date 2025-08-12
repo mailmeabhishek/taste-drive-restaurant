@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
     <title>Taste Drive</title>
   </head>
   <body>
@@ -143,50 +147,118 @@
             <button type="button">Book Now</button>
           </form>
         </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
     <!-- Reservation Close-->
 
     <!-- Deal Today Start-->
-    <div class="deal_today">
-      <div class="conatiner">
+    <section id="deal_today">
+      <div class="conatiner swiper mySwiper">
         <h3 class="normal_heading-1">Deal Today</h3>
         <h2 class="main_heading-1">TODAY SPECIAL DISH</h2>
-        <div class="card_content">
-          <div class="cars">
-            <img src="./images/veg_briyani.jpeg" alt="briyani"/>
-              <h4>Veg Biryani</h4>
-              <p>
-                Aromatic and flavorful, our Veg Biryani is a royal blend of
-                basmati rice, garden-fresh vegetables, and exotic spices,
-                slow-cooked to perfection.
-              </p>
-              <p class="price">Only Rs100</p>
+        <div class="card_content swiper-wrapper">
+          <div class="cards swiper-slide">
+            <img src="./images/deal_today_1.jpeg" alt="briyani" />
+            <h4>Grilled Chicken</h4>
+            <p>
+              Juicy, tender grilled chicken, infused with smoky flavors and
+              perfectly charred on the outside. A wholesome, protein-packed
+              delight for any meal.
+            </p>
+            <p class="price">Only Rs200</p>
+          </div>
+          <div class="cards swiper-slide">
+            <img src="./images/deal_today_2.jpeg" alt="briyani" />
+            <h4>Achari Paneer Tikka</h4>
+            <p>
+              Achari Paneer is a tangy and spicy Indian dish made with cottage
+              cheese cooked in a pickle-flavored masala. Its bold, zesty taste
+              comes from traditional Indian spices and pickle masala.
+            </p>
+            <p class="price">Only Rs150</p>
+          </div>
+          <div class="cards swiper-slide">
+            <img src="./images/deal_today_3.jpeg" alt="briyani" />
+            <h4>Fish Fry Tikka</h4>
+            <p>
+              Crispy on the outside, tender and juicy inside, a fish fry is a
+              savory delight loved by seafood fans. Perfectly seasoned and
+              golden-fried, it’s a classic comfort food.
+            </p>
+            <p class="price">Only Rs200</p>
+          </div>
         </div>
-                 <div class="cars">
-            <img src="./images/veg_briyani.jpeg" alt="briyani"/>
-              <h4>Veg Biryani</h4>
-              <p>
-                Aromatic and flavorful, our Veg Biryani is a royal blend of
-                basmati rice, garden-fresh vegetables, and exotic spices,
-                slow-cooked to perfection.
-              </p>
-              <p class="price">Only Rs100</p>
-        </div>
-                 <div class="cars">
-            <img src="./images/veg_briyani.jpeg" alt="briyani"/>
-              <h4>Veg Biryani</h4>
-              <p>
-                Aromatic and flavorful, our Veg Biryani is a royal blend of
-                basmati rice, garden-fresh vegetables, and exotic spices,
-                slow-cooked to perfection.
-              </p>
-              <p class="price">Only Rs100</p>
-        </div>
+        <div class="swiper-pagination"></div>
       </div>
-    </div>
+    </section>
     <!-- Deal Today Close-->
 
+    <!-- Food Lover Start-->
+    <section id="food_lover">
+      <div class="container">
+        <h3 class="normal_heading-1">Food Lover</h3>
+        <h2 class="main_heading">RESTURANT MENU</h2>
+        <div class="food_lover_container">
+          <div class="btn_ontainer">
+            <button type="button" class="btn_cat active_btn">All Dishes</button>
+            <button type="button" class="btn_cat">Dinner</button>
+            <button type="button" class="btn_cat">Lunch</button>
+            <button type="button" class="btn_cat">Drinks</button>
+            <button type="button" class="btn_cat">Starter</button>
+          </div>
+          <div class="menus_items_container">
+            <div class="img_cards">
+              <img src="./images/food_lover_1.jpg" alt="" />
+              <p class="price">Only on 100 Rupees</p>
+              <p>Chikcen and Cashews</p>
+            </div>
+            <div class="img_cards">
+              <img src="./images/food_lover_2.jpg" alt="" />
+              <p class="price">Only on 100 Rupees</p>
+              <p>Chikcen and Cashews</p>
+            </div>
+            <div class="img_cards">
+              <img src="./images/food_lover_3.jpg" alt="" />
+              <p class="price">Only on 100 Rupees</p>
+              <p>Chikcen and Cashews</p>
+            </div>
+            <div class="img_cards">
+              <img src="./images/food_lover_4.jpg" alt="" />
+              <p class="price">Only on 100 Rupees</p>
+              <p>Chikcen and Cashews</p>
+            </div>
+            <div class="img_cards">
+              <img src="./images/food_lover_5.jpg" alt="" />
+              <p class="price">Only on 100 Rupees</p>
+              <p>Chikcen and Cashews</p>
+            </div>
+            <div class="img_cards">
+              <img src="./images/food_lover_6.jpg" alt="" />
+              <p class="price">Only on 100 Rupees</p>
+              <p>Chikcen and Cashews</p>
+            </div>
+            <div class="img_cards">
+              <img src="./images/food_lover_7.jpg" alt="" />
+              <p class="price">Only on 100 Rupees</p>
+              <p>Chikcen and Cashews</p>
+            </div>
+            <div class="img_cards">
+              <img src="./images/food_lover_8.jpg" alt="" />
+              <p class="price">Only on 100 Rupees</p>
+              <p>Chikcen and Cashews</p>
+            </div>
+            <div class="img_cards">
+              <img src="./images/food_lover_9.jpg" alt="" />
+              <p class="price">Only on 100 Rupees</p>
+              <p>Chikcen and Cashews</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Food Lover Close-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/scripts.js"></script>
   </body>
 </html>
