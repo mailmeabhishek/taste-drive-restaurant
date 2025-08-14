@@ -28,11 +28,11 @@
               <i class="fas fa-times close-btn"></i>
             </div>
             <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Menu</a></li>
-            <li><a href="#">Reservation</a></li>
-            <li><a href="#">Blog</a></li>
-            <li style="margin-right: 100px"><a href="#">Contact</a></li>
+            <li><a href="#footer">About</a></li>
+            <li><a href="#food_lover">Menu</a></li>
+            <li><a href="#reservation_tb1">Reservation</a></li>
+            <li><a href="#up_coming_events">Blog</a></li>
+            <li><a href="#footer">Contact</a></li>
           </nav>
           <div class="btn">
             <i class="fas fa-bars menu-btn"></i>
@@ -54,7 +54,7 @@
     </main>
     <!-- Header Showcase Close-->
 
-    <!-- Header Special Offer Start-->
+    <!-- Special Offer Start-->
     <aside id="sp_offer">
       <div class="container">
         <div class="sp_content">
@@ -115,17 +115,17 @@
             <div class="img_right_side">
               <img src="./images/combo.jpg" alt="" />
               <div class="over_img">
-                <a href="#"><h2>Menus</h2></a>
+                <a href="#food_lover"><h2>Menus</h2></a>
               </div>
             </div>
           </div>
         </div>
       </div>
     </aside>
-    <!-- Header Special Offer Close-->
+    <!-- Special Offer Close-->
 
     <!-- Reservation Start-->
-    <div class="reservation_tb1">
+    <div id="reservation_tb1">
       <div class="container">
         <div class="form_data">
           <h3 class="normal_heading">Your Table</h3>
@@ -198,66 +198,173 @@
     <section id="food_lover">
       <div class="container">
         <h3 class="normal_heading-1">Food Lover</h3>
-        <h2 class="main_heading">RESTURANT MENU</h2>
+        <h2 class="main_heading-1">RESTURANT MENU</h2>
         <div class="food_lover_container">
           <div class="btn_ontainer">
-            <button type="button" class="btn_cat active_btn">All Dishes</button>
-            <button type="button" class="btn_cat">Dinner</button>
-            <button type="button" class="btn_cat">Lunch</button>
-            <button type="button" class="btn_cat">Drinks</button>
-            <button type="button" class="btn_cat">Starter</button>
+            <button type="button" class="btn_cat active_btn" data-id="all">
+              All Dishes
+            </button>
+            <button type="button" class="btn_cat" data-id="Dinner">
+              Dinner
+            </button>
+            <button type="button" class="btn_cat" data-id="Lunch">Lunch</button>
+            <button type="button" class="btn_cat" data-id="Drinks">
+              Drinks
+            </button>
+            <button type="button" class="btn_cat" data-id="Starter">
+              Starter
+            </button>
           </div>
-          <div class="menus_items_container">
-            <div class="img_cards">
-              <img src="./images/food_lover_1.jpg" alt="" />
-              <p class="price">Only on 100 Rupees</p>
-              <p>Chikcen and Cashews</p>
+          <div class="menus_items_container"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Food Lover Close-->
+
+    <!-- Customer Feedback Start-->
+    <section id="customer_feedback">
+      <div class="container swiper mySwiper">
+        <h3 class="normal_heading-1">Food Lover</h3>
+        <h2 class="main_heading">CUSTOMER FEEDBACK</h2>
+        <div class="customer_cards_container swiper-wrapper">
+          <div class="customer_card swiper-slide">
+            <img src="./images/cust_feed_1.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+              porro esse ut asperiores deserunt, dolorem debitis? Vitae, ut.
+              Porro earum dolore amet qui enim mollitia cumque asperiores nisi.
+              Odio, possimus!
+            </p>
+            <p class="name">Rajeev</p>
+          </div>
+          <div class="customer_card swiper-slide">
+            <img src="./images/cust_feed_2.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+              porro esse ut asperiores deserunt, dolorem debitis? Vitae, ut.
+              Porro earum dolore amet qui enim mollitia cumque asperiores nisi.
+              Odio, possimus!
+            </p>
+            <p class="name">Rajeev</p>
+          </div>
+          <div class="customer_card swiper-slide">
+            <img src="./images/food_lover_1.jpg" alt="" />
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt
+              porro esse ut asperiores deserunt, dolorem debitis? Vitae, ut.
+              Porro earum dolore amet qui enim mollitia cumque asperiores nisi.
+              Odio, possimus!
+            </p>
+            <p class="name">Rajeev</p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Customer Feedback Close-->
+
+    <!-- Upcoming Event Start-->
+    <section id="up_coming_events">
+      <div class="container swiper mySwiper">
+        <h3 class="normal_heading-1">Month of October</h3>
+        <h2 class="main_heading-1">UPCOMING EVENTS</h2>
+        <div class="events_cards_container swiper-wrapper">
+          <div class="events_card swiper-slide">
+            <img src="./images/events_1.jpg" alt="" />
+            <div class="event_content">
+              <p>
+                Navratri Dandia is a vibrant and energetic dance celebration
+                performed during the nine nights of Navratri, devotion to
+                Goddess Durga.
+              </p>
+              <a href="#">Read More..</a>
             </div>
-            <div class="img_cards">
-              <img src="./images/food_lover_2.jpg" alt="" />
-              <p class="price">Only on 100 Rupees</p>
-              <p>Chikcen and Cashews</p>
+          </div>
+          <div class="events_card swiper-slide">
+            <img src="./images/events_2.jpg" alt="" />
+            <div class="event_content">
+              <p>
+                Diwali 2025, the Festival of Lights, will be celebrated on 20
+                October 2025, marking the triumph of light over darkness and
+                good over evil.
+              </p>
+              <a href="#">Read More..</a>
             </div>
-            <div class="img_cards">
-              <img src="./images/food_lover_3.jpg" alt="" />
-              <p class="price">Only on 100 Rupees</p>
-              <p>Chikcen and Cashews</p>
+          </div>
+          <div class="events_card swiper-slide">
+            <img src="./images/events_3.jpg" alt="" />
+            <div class="event_content">
+              <p>
+                New Year 2026 marks a fresh beginning filled with hope,
+                opportunities, and new possibilities to chase dreams and create
+                beautiful memories.
+              </p>
+              <a href="#">Read More..</a>
             </div>
-            <div class="img_cards">
-              <img src="./images/food_lover_4.jpg" alt="" />
-              <p class="price">Only on 100 Rupees</p>
-              <p>Chikcen and Cashews</p>
-            </div>
-            <div class="img_cards">
-              <img src="./images/food_lover_5.jpg" alt="" />
-              <p class="price">Only on 100 Rupees</p>
-              <p>Chikcen and Cashews</p>
-            </div>
-            <div class="img_cards">
-              <img src="./images/food_lover_6.jpg" alt="" />
-              <p class="price">Only on 100 Rupees</p>
-              <p>Chikcen and Cashews</p>
-            </div>
-            <div class="img_cards">
-              <img src="./images/food_lover_7.jpg" alt="" />
-              <p class="price">Only on 100 Rupees</p>
-              <p>Chikcen and Cashews</p>
-            </div>
-            <div class="img_cards">
-              <img src="./images/food_lover_8.jpg" alt="" />
-              <p class="price">Only on 100 Rupees</p>
-              <p>Chikcen and Cashews</p>
-            </div>
-            <div class="img_cards">
-              <img src="./images/food_lover_9.jpg" alt="" />
-              <p class="price">Only on 100 Rupees</p>
-              <p>Chikcen and Cashews</p>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- Upcoming Event Close-->
+
+    <!-- Footer Start -->
+    <section id="footer">
+      <div class="container">
+        <div class="footer_container">
+          <div class="about_us">
+            <h2>Taste Drive | Restro and Cafe</h2>
+            <p>
+              An Indian restaurant offers a rich culinary experience with
+              flavorful dishes, aromatic spices, and traditional recipes from
+              across India. It’s a place where vibrant culture meets warm
+              hospitality.
+            </p>
+            <a href="#">Read More...</a>
+          </div>
+          <div class="opening_hours">
+            <h2>Opening Hours</h2>
+            <p class="day">MON-FRI: <span>-------11:00 AM 11:00 PM</span></p>
+            <p class="day">SATURDAY: <span>-------11:00 AM 05:00 PM</span></p>
+            <p class="day">SUNDAY: <span>-------11:00 AM 11:00 PM</span></p>
+          </div>
+          <div class="contact_us">
+            <h2>Contact Us</h2>
+            <h3>GET IN TOUCH</h3>
+            <p>+91 8951699042</p>
+            <p class="add">Address</p>
+            <p>
+              Taste Drive Restro & Cafe, Bhawano Khap Rd, Nabinagar, Bihar
+              824301
+            </p>
+            <p class="email">Email</p>
+            <p>order@tastedrive.com or sales@tastedrive.com</p>
+          </div>
+          <div class="blank"></div>
+          <div class="follow_us">
+            <h2>Follow Us</h2>
+            <p>Follow us on social media for the latest updates and offers.</p>
+            <div class="social_media">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-youtube"></i></a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <!-- Food Lover Close-->
+    <!-- Footer Close -->
+
+    <!-- Copy Right Start -->
+    <section id="copy_right">
+      <div class="copy_right" style="text-align: center">
+        <p>&copy; 2025 Taste Drive Restro and Cafe. All rights reserved.</p>
+        <p>Designed by Taste Drive Team</p>
+      </div>
+    </section>
+    <!-- Copy Right Close -->
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./js/scripts.js"></script>
   </body>

@@ -40,23 +40,106 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-// function dispplayImages() {
-//   var images = [
-//     "../images/food_lover_1.jpg",
-//     "../images/food_lover_2.jpg",
-//     "../images/food_lover_3.jpg",
-//     "../images/food_lover_4.jpg",
-//     "../images/food_lover_5.jpg",
-//     "../images/food_lover_6.jpg",
-//   ];
-//   var article = document.querySelector(".img_cards");
-//   for (var i = 0; i < images.length; i++) {
-//     var img = document.createElement("img");
-//     img.src = images[i];
-//     img.alt = "Food Lover Image " + (i + 1);
-//     article.appendChild(img);
-//   }
-// }
-// dispplayImages();
+//Dynamcally adding images to the menu section
 
+const SectionCenter = document.querySelector(".menus_items_container");
+const filterBtns = document.querySelectorAll(".btn_cat");
+
+filterBtns.forEach(function (btn) {
+  btn.addEventListener("click", function (e) {
+    const Category = e.currentTarget.dataset.id;
+    const menuCategory = menu.filter(function (menuItem) {
+      if (menuItem.Category === Category) {
+        return menuItem;
+      }
+    });
+    if (Category === "all") {
+      displayMenusItem(menu);
+    } else {
+      displayMenusItem(menuCategory);
+    }
+  });
+});
+
+const menu = [
+  {
+    id: 1,
+    title: " Tandoori Chicken",
+    Category: "Dinner",
+    price: 150,
+    img: "./images/food_lover_1.jpg",
+  },
+  {
+    id: 2,
+    title: " Tender Fish Fry",
+    Category: "Starter",
+    price: 150,
+    img: "./images/food_lover_2.jpg",
+  },
+  {
+    id: 3,
+    title: " Panner Tikka",
+    Category: "Starter",
+    price: 100,
+    img: "./images/food_lover_3.jpg",
+  },
+  {
+    id: 4,
+    title: " Fish Curry",
+    Category: "Dinner",
+    price: 125,
+    img: "./images/food_lover_4.jpg",
+  },
+  {
+    id: 5,
+    title: " Afgani Chicken Tikka",
+    Category: "Starter",
+    price: 199,
+    img: "./images/food_lover_5.jpg",
+  },
+  {
+    id: 6,
+    title: " Chicken Briyani",
+    Category: "Lunch",
+    price: 149,
+    img: "./images/food_lover_6.jpg",
+  },
+  {
+    id: 7,
+    title: " Veg Briyani",
+    Category: "Lunch",
+    price: 100,
+    img: "./images/food_lover_7.jpg",
+  },
+  {
+    id: 8,
+    title: " Spring Rolls",
+    Category: "Starter",
+    price: 100,
+    img: "./images/food_lover_8.jpg",
+  },
+  {
+    id: 9,
+    title: " Mojito Drinks",
+    Category: "Drinks",
+    price: 100,
+    img: "./images/food_lover_9.jpg",
+  },
+];
+
+window.addEventListener("DOMContentLoaded", function () {
+  displayMenusItem(menu);
+});
+
+function displayMenusItem(menuItem) {
+  let displayMenusItem = menuItem.map(function (item) {
+    return `<div class="img_cards">
+              <img src=${item.img} alt="" />
+              <p class="price">Only on ${item.price} Rupees</p>
+              <p>${item.title}</p>
+            </div>`;
+  });
+  displayMenusItem = displayMenusItem.join("");
+  SectionCenter.innerHTML = displayMenusItem;
+}
 console.log("Welcome to Taste Drive!");

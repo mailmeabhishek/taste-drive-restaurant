@@ -11,7 +11,7 @@
     padding: 2rem 0;
   }
 
-  .reservation_tb1 .form_data {
+  #reservation_tb1 .form_data {
     width: 70%;
   }
 }
@@ -69,10 +69,26 @@
   .sp_content {
     grid-template-columns: repeat(1, 1fr);
   }
-  .reservation_tb1 .form_data {
+  #reservation_tb1 .form_data {
     width: 100%;
   }
-  .reservation_tb1 .form_data form input {
+  #reservation_tb1 .form_data form input {
     width: 100%;
+  }
+  .menus_items_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .btn_cat {
+    margin: 1rem 2rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .menus_items_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .btn_cat {
+    margin: 1rem 2rem;
   }
 }
