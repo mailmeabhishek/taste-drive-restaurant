@@ -522,7 +522,6 @@ header {
 .about_us p {
   line-height: 1.8;
   padding-bottom: 2rem;
-  /* color: black; */
 }
 .about_us a {
   color: var(--primary-color);
@@ -531,10 +530,15 @@ header {
   padding-bottom: 1.5rem;
   color: var(--primary-color);
 }
-
+.social_media i {
+  color: var(--primary-color);
+}
 /* Footer Close */
+
+/* Copy Right Start */
 #copy_right {
   text-align: center;
   font-size: 1.2rem;
   background: rgb(155, 149, 149);
 }
+/* Copy Right Close */
