@@ -353,7 +353,7 @@ header {
 /* Food Lover Start */
 #food_lover {
   padding: 5rem 0;
-  background: #f4f4f4;
+  background: lightgray;
 }
 .food_lover_container {
   margin: 3rem 0;
@@ -542,3 +542,4 @@ header {
   background: rgb(155, 149, 149);
 }
 /* Copy Right Close */
+
